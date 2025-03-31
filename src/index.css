@@ -1,0 +1,71 @@
+/* Add these styles to your App.css file */
+
+/* Status message styles */
+.status-message {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Profile image container */
+.profile-image-container {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.change-image-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(52, 152, 219, 0.8);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.change-image-btn:hover {
+  background-color: rgba(41, 128, 185, 0.9);
+}
+
+/* Profile upload form */
+.profile-upload {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+.profile-upload h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.profile-upload input[type="file"] {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
