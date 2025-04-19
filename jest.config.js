@@ -11,7 +11,11 @@ export default {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov'],
-  // Add these lines for ESM support
+  // Improved ESM support
   moduleFileExtensions: ['js', 'mjs', 'jsx', 'json', 'node'],
-  transformIgnorePatterns: []
+  transformIgnorePatterns: [],
+  // Force Jest to use dynamic ESM imports
+  testRunner: 'jest-circus/runner',
+  // Add this line to ensure Node.js handles ESM properly
+  resolver: undefined
 };
